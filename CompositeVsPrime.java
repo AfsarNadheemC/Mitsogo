@@ -1,3 +1,6 @@
+//The program will arrange the String by characters with prime ascii values first in decending order 
+// And characters with composite ascii values last in accending order 
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,11 +15,16 @@ public class CompositeVsPrime {
             }
             else addCom(a.charAt(i));
         }
-        System.out.println((prLi) +""+ (coLi));
+        for (char x : prLi){
+            System.out.print(x+" ");
+        }
+        for (char x : coLi){
+            System.out.print(x+" ");
+        }
     }
 
     public static boolean ckPrime (int num){
-        System.out.println(num);
+        // System.out.println((char)num +" "+num); // Uncomment to show the ascii value
         for (int i=2; i<=Math.sqrt(num); i++){
             if (num % i == 0)   return false;
         }

@@ -1,8 +1,25 @@
+// If the addition of all digits is a prime then the number is called good prime
+
 public class GoodPrime {
     public static void main(String[] args) {
-        for (int i=3;i<100;i++){
-            if (gdPrime(i)!=-1)
-            System.out.println(i+" "+gdPrime(i));
+        int limit = 100; // change the value to set new limit
+        boolean contain = false;
+        for (int i=3;i<limit;i++){
+            if (gdPrime(i)!=-1){
+                if (!contain){
+                    System.out.println("The Good Primes upto "+limit+" are : ");
+                    contain = true;
+                }
+                System.out.print(i+" ");
+    
+                // Uncomment the following line to show the addition
+                // System.out.print(+gdPrime(i));
+    
+                System.out.println();
+            }
+        }
+        if (!contain){
+            System.out.println("There are no prime upto "+limit);
         }
     }
     public static int gdPrime (int num){

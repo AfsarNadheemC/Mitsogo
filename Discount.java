@@ -1,3 +1,6 @@
+// This code will generate a least value on price by reducing a fixed number of digits from that
+
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -5,7 +8,7 @@ public class Discount {
     static List <Integer> fiLi = new ArrayList <> ();
     static List <Integer> teLi = new ArrayList <> ();
     static List <Integer> reLi = new ArrayList <> ();
-    static int price = 9010890;
+    static int price = 9211810;
     static int red = 3;
     static int len = findLength();
 

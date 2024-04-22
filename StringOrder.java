@@ -1,3 +1,5 @@
+// It will sort the string
+
 import java.util.ArrayList;
 import java.util.List;
 public class StringOrder {
@@ -8,7 +10,9 @@ public class StringOrder {
         for (int i=0;i<a.length();i++){
             addSt(a.charAt(i));
         }
-        System.out.println(stLi);
+        for (char x : stLi){
+            System.out.print(x+" ");
+        }
     }
 
     public static void addSt (char c){
